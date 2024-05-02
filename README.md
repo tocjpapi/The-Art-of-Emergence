@@ -73,7 +73,7 @@ To access the School Drama Club Website Showcase, you'll need:
 
 ### Installation
 
-There's no need for installation. Simply visit the website to start exploring the world of our school's drama club.
+There's no need for installation. Simply visit the website to start exploring.
 
 ### Executing Program
 
