@@ -45,6 +45,7 @@ body {
   color: #111;
 }
 
+
 .navigation a{
     color: var(--text);
     text-decoration: none;
@@ -937,3 +938,8 @@ letter-spacing: 120%;
     
   }
 
+  @media (hover:none){
+    .cursor{
+      display: none;
+    }
+  }

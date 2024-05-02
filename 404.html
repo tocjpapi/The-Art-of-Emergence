@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="view-transition" content="same-origin" />
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <title>404 • Lost in Emergence.</title>
+    <style>
+:root {
+    --bg: #131313; 
+    --text:  #f9f2ec;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: calc(100vw / 1512 * 10);
+
+}
+
+body {
+  font-family: 'Neue Montreal';
+  font-weight: 200;
+  font-size: medium;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh; 
+  overscroll-behavior: contain; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+
+::selection{
+  background-color: #d8cabd;
+  color: #111;
+}
+.intro{
+    height: 100vh;
+    width: 100vw;
+    scale: 0.5;
+    animation:fade-up 1.1s,scale 1.2s  1.2s  ease forwards;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: filter 0.1s;
+}
+
+.cornertxt{
+    opacity: 0.4;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s;
+    animation: fade-in-down 1.5s ease forwards;
+  }
+
+
+  @keyframes fade-in-down{
+    0%{
+        opacity:0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 0.4;
+    } 
+}
+
+  .cornertxt span{
+    /* opacity: 0; */
+    padding-right: 6%;
+    transition: all 0.3s;
+  }
+
+  .cornertxt:hover span{
+    padding-right: 11%;
+    opacity: 0.7;
+  }
+
+  .cornertxt:hover{
+    opacity: 0.7;
+  }
+
+.e404{
+    position: absolute;
+}
+
+.e404 p{
+    font-size: 34px;
+    font-weight: 400;
+    transform: translateY(100%);
+    animation: come 1.2s ease forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0.4;
+}
+
+.div{
+
+    overflow: hidden;
+}
+
+@keyframes come {
+    from{
+    transform: translateY(100%)
+       rotate(5deg);
+}
+
+to{
+    transform: translateY(0)
+}
+}
+
+.eye {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+  border-radius: 10px;
+position: relative;
+border:1px solid #706d6b ;
+  overflow: hidden;
+}
+.pupil {
+  background-color: #706d6b;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  transition: all 0.3s ease-out;
+}
+
+.wrap{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    animation: fadeIng  1s 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIng {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+  
+  
+    100% {
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+  }
+
+  .more3{
+    position: absolute;
+    top: 52px;
+    right: 20px;
+    width: 105px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+  }  
+
+
+
+
+  .more3 a{
+    color: var(--text);
+    text-decoration: none;  
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+  }
+
+  .more3 span{
+    opacity: 0;
+    padding-left: 6px;
+    transition: all 0.3s;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="bepositioned">
+        <div class="cornertxt" onclick="toggleSidebar()"><p><span>←</span> Back</p></div>
+        <div class="more3" ><a>  </a><span class="right">→</span></div> 
+    </div>
+  
+        <div class="e404">
+            <div class="div"><p>404</p></div>
+            <div class="div"> <p>Lost in Emergence ®</p></div>
+        </div>
+    </style>
+
+<div class="wrap">
+    <div class="eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+</body>
+
+
+<script>
+function toggleSidebar() {
+    window.location.href = 'index.html';
+}
+
+</script>
+<script>
+    var pupilsHTMLCollection = document.getElementsByClassName("pupil");
+    var pupilsArray = Array.from(pupilsHTMLCollection);
+  
+    var input = {
+      mouseX: {
+        start: 0,
+        end: window.innerWidth,
+        current: 0
+      },
+      mouseY: {
+        start: 0,
+        end: window.innerHeight,
+        current: 0
+      }
+    };
+  
+    input.mouseX.range = input.mouseX.end - input.mouseX.start;
+    input.mouseY.range = input.mouseY.end - input.mouseY.start;
+  
+    var output = {
+      x: {
+        start: -25, // Adjusted to half of the pupil width
+        end: 25, // Adjusted to half of the container width
+        current: 0
+      },
+      y: {
+        start: -25, // Adjusted to half of the pupil height
+        end: 25, // Adjusted to half of the container height
+        current: 0
+      }
+    };
+  
+    output.x.range = output.x.end - output.x.start;
+    output.y.range = output.y.end - output.y.start;
+  
+    var handleMouseMove = function (event) {
+      input.mouseX.current = event.clientX;
+      input.mouseX.fraction =
+        (input.mouseX.current - input.mouseX.start) / input.mouseX.range;
+  
+      input.mouseY.current = event.clientY;
+      input.mouseY.fraction =
+        (input.mouseY.current - input.mouseY.start) / input.mouseY.range;
+  
+      output.x.current = output.x.start + input.mouseX.fraction * output.x.range;
+      output.y.current = output.y.start + input.mouseY.fraction * output.y.range;
+  
+      // Adjusting the positions to keep pupils within container bounds
+      output.x.current = Math.min(Math.max(output.x.current, -45), 55); // 55 = 100 - pupil width
+      output.y.current = Math.min(Math.max(output.y.current, -45), 55); // 55 = 100 - pupil height
+  
+      // Apply output to HTML
+      pupilsArray.forEach(function (pupil, k) {
+        pupil.style.transform =
+          "translate(" + output.x.current + "px, " + output.y.current + "px)";
+      });
+    };
+  
+    var resetPupilsPosition = function () {
+      // Reset the position of pupils to their original values
+      pupilsArray.forEach(function (pupil, k) {
+        pupil.style.transform =
+          "translate(0px, 0px)"; // Assuming original position is at (0,0)
+      });
+    };
+  
+    var handleResize = function () {
+      input.mouseX.end = window.innerWidth;
+      input.mouseX.range = input.mouseX.end - input.mouseX.start;
+  
+      input.mouseY.end = window.innerHeight;
+      input.mouseY.range = input.mouseY.end - input.mouseY.start;
+    };
+  
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("resize", handleResize);
+  
+    // Add mouseleave event listener to reset pupils' position
+    pupilsArray.forEach(function (pupil) {
+      pupil.addEventListener("mouseleave", resetPupilsPosition);
+    });
+  </script>
+  
+
+
+
+</html>
