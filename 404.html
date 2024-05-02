@@ -84,6 +84,10 @@ body {
     animation: fade-in-down 1.5s ease forwards;
   }
 
+  .cornertxt a{
+    color: var(--text);
+    text-decoration: none;
+  }
 
   @keyframes fade-in-down{
     0%{
@@ -222,7 +226,7 @@ border:1px solid #706d6b ;
 <body>
 
     <div class="bepositioned">
-        <div class="cornertxt" onclick="toggleSidebar()"><p><span>←</span> Back</p></div>
+        <div class="cornertxt"><a href="index.html"><span>←</span> Back</a></div>
         <div class="more3" ><a>  </a><span class="right">→</span></div> 
     </div>
   
@@ -242,12 +246,7 @@ border:1px solid #706d6b ;
 </body>
 
 
-<script>
-function toggleSidebar() {
-    window.location.href = 'index.html';
-}
 
-</script>
 <script>
     var pupilsHTMLCollection = document.getElementsByClassName("pupil");
     var pupilsArray = Array.from(pupilsHTMLCollection);
