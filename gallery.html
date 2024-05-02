@@ -112,26 +112,53 @@
 
 
         <div class="endy">
-
-
             <div class="container">
                 <div class="inner">
-                <div class="one "><p class=" slide-ups">Instagram <span>↗</span></p></div>
-                <div class="one "><p class=" slide-ups">LinkedIn <span>↗</span></p></div>
-                <div class="one"><p class=" slide-ups">GitHub <span>↗</span></p></div>
-                <div class="one"><p class=" slide-ups">Awwwards <span>↗</span></p></div>
-            </div>
+                    <div class="one"><p class="slide-ups" id="instagramLink">Instagram <span>↗</span></p></div>
+                    <div class="one"><p class="slide-ups" id="linkedinLink">LinkedIn <span>↗</span></p></div>
+                    <div class="one"><p class="slide-ups" id="githubLink">GitHub <span>↗</span></p></div>
+                    <div class="one"><p class="slide-ups" id="awwwardsLink">Awwwards <span>↗</span></p></div>
+                </div>
             </div>
             <div class="centerthis slide-up">
-            <div class="maint"><h1>Talk with the Creator <span class="loading-dots"></span></h1></div>
-            
-            <div class="more2"><a href="index.html">See Portfolio </a><span class="right">→</span></div> 
+                <div class="maint"><h1>Talk with the Creator <span class="loading-dots"></span></h1></div>
+                <div class="more2"><a href="index.html">See Portfolio</a><span class="right">→</span></div> 
             </div> 
-            
             <div class="theguy"><p class="slide-up"></p></div>
-            
-            </div>
-
+        </div>
+        
+        <script>
+            // Get references to the social links
+            const instagramLink = document.getElementById('instagramLink');
+            const linkedinLink = document.getElementById('linkedinLink');
+            const githubLink = document.getElementById('githubLink');
+            const awwwardsLink = document.getElementById('awwwardsLink');
+        
+            // Define the URLs for each social platform
+            const instagramURL = 'https://www.instagram.com/varmoux/';
+            const linkedinURL = 'https://www.linkedin.com/in/treasure-onwuchekwa-3925b22a0/';
+            const githubURL = 'https://github.com/tocjpapi';
+            const awwwardsURL = 'https://www.awwwards.com/tocj/';
+        
+            // Add click event listeners to each social link
+            instagramLink.addEventListener('click', function() {
+                window.open(instagramURL, '_blank');
+            });
+        
+            linkedinLink.addEventListener('click', function() {
+                window.open(linkedinURL, '_blank');
+            });
+        
+            githubLink.addEventListener('click', function() {
+                window.open(githubURL, '_blank');
+            });
+        
+            awwwardsLink.addEventListener('click', function() {
+                window.open(awwwardsURL, '_blank');
+            });
+        </script>
+        
+        
 
 
 
