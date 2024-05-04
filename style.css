@@ -104,7 +104,7 @@ body {
   position: relative;
   transition: filter 0.1s;
   border: 1px solid #222;
-  border-radius: 30px;
+  border-radius: 60px;
 }
 
 .link1{
@@ -137,6 +137,7 @@ transition: opacity 0.3s;
 
     to{
         scale: 1;
+        border-radius: 0px;
     }
 }
 
