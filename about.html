@@ -477,6 +477,16 @@ setTimeout(() => {
      });
    </script>
 
+<script>
+
+    if ("ontouchstart" in window || navigator.msMaxTouchPoints) {
+      document.querySelectorAll('.navigation a').forEach(btn => {
+        btn.removeEventListener("mousemove");
+        btn.removeEventListener("mouseout");
+      });
+    }
+  </script>
+
 
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
 <script>

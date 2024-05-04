@@ -89,12 +89,13 @@ body {
 }
 
 .navigation{
-    position: absolute;
-    left: 38vw;
-  width: 20vw;
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  left: 42vw;
+width: 13vw;
+display: flex;
+justify-content: space-between;
 }
+
 
 
 .intro{
@@ -996,21 +997,27 @@ letter-spacing: 120%;
 
   
   @media (max-width: 500px) {
-    .navigation{
-        position: absolute;
-        left: 23vw;
-      width: 40vw;
-      display: flex;
-      justify-content: space-between;
-    }
 
-    .intro p{
-        font-size: 18px;
-        font-weight: 400;
-        animation: come 1.2s 1.2s ease forwards;
-        transform: translateY(100%);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
+    .navigation{
+      position: absolute;
+      left: 28vw;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation a{
+font-size: small;
+}
+
+
+  .intro p{
+      font-size: 24px;
+      font-weight: 400;
+      animation: come 1.2s 1.2s ease forwards;
+      transform: translateY(100%);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
 
     .talk{
         width: 75vw;

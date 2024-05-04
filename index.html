@@ -31,7 +31,7 @@
 
 <div class="line"></div>
 
-    <img src="https://images.unsplash.com/photo-1663233608753-84a1f25149cf?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
+    <img src="https://camillemormal.com/static/media/d/work/gucci/home.jpg?9" alt="" srcset="">
 
 </div> 
 
@@ -332,7 +332,7 @@ requestAnimationFrame(raf);
   window.addEventListener('scroll', function() {
   elementsToObserve.forEach(el => {
       if (isElementInViewport(el)) {
-          el.classList.add('animated'); // Add your animation class here
+          el.classList.add('animated'); 
       }
   });
   });
@@ -368,6 +368,16 @@ requestAnimationFrame(raf);
   
       });
     });
+  </script>
+
+<script>
+
+    if ("ontouchstart" in window || navigator.msMaxTouchPoints) {
+      document.querySelectorAll('.navigation a').forEach(btn => {
+        btn.removeEventListener("mousemove");
+        btn.removeEventListener("mouseout");
+      });
+    }
   </script>
 
 

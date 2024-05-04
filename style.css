@@ -85,8 +85,8 @@ body {
 
 .navigation{
     position: absolute;
-    left: 38vw;
-  width: 20vw;
+    left: 42vw;
+  width: 13vw;
   display: flex;
   justify-content: space-between;
 }
@@ -898,14 +898,19 @@ letter-spacing: 120%;
   @media (max-width: 500px) {
     .navigation{
         position: absolute;
-        left: 23vw;
-      width: 40vw;
+        left: 28vw;
+      width: 30vw;
       display: flex;
       justify-content: space-between;
     }
 
+    .navigation a{
+font-size: small;
+  }
+
+
     .intro p{
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 400;
         animation: come 1.2s 1.2s ease forwards;
         transform: translateY(100%);
@@ -953,11 +958,6 @@ letter-spacing: 120%;
         100% { transform: translateX(-200%); }
       }
 
-      .intro img{
-        width: 250%;
-        height: 250%;
-        object-fit: cover;
-    }
 
     .next{
       border-top-left-radius: 30px;
