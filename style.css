@@ -6,11 +6,11 @@
 
 
 
-:root {
-    --bg: #131313; 
-    --text:  #f9f2ec;
-}
 
+:root {
+  --bg: #111111; 
+  --text:  #f9f2ec;
+}
 *,
 *:before,
 *:after {
@@ -77,7 +77,7 @@ body {
     position: absolute;
     z-index: 999;
     display: flex;
-
+    
     align-items: center;
     top: 0%;
 
