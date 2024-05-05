@@ -1059,6 +1059,11 @@ img {
   animation: fade-up 1.2s 1.4s ease forwards;
 }
 
+.bottom span{
+  opacity: 0;
+}
+
+
 .bottom p{
   font-size: small;
   
