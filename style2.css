@@ -98,20 +98,23 @@ justify-content: space-between;
 
 
 
-.intro{
-    height: 100dvh;
-    width: 100vw;
-    scale: 0.5;
-    animation:fade-up 1.1s,scale 1.2s  1.2s  ease forwards;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: filter 0.1s;
-    border: 1px solid #222;
-    border-radius: 60px;
+.intro {
+  height: 100dvh;
+  width: 100vw;
+  scale: 0.5;
+  animation: fade-up 1.1s, scale 1.2s 1.2s ease forwards;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: filter 0.1s;
+  border: 1px solid #222;
+  border-radius: 60px;
+
 }
+
+
 
 .link1{
     opacity: 0.9;
