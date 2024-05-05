@@ -95,7 +95,7 @@ justify-content: space-between;
 
 
 .intro{
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   scale: 0.5;
   animation:fade-up 1.1s,scale 1.2s  1.2s  ease forwards;
