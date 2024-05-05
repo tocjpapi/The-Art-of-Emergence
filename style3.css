@@ -729,7 +729,7 @@ letter-spacing: 120%;
 }
 
 .wrapper {
-  height: 390vh;
+  height: fit-content;
   background: var(--bg);
 
   position: relative;
