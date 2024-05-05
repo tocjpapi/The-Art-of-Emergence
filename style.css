@@ -148,7 +148,7 @@ transition: opacity 0.3s;
   animation: come 1.2s 1.2s ease forwards;
   transform: translateY(100%);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-
+  opacity: 0.8;
 }
 
 .hint{
@@ -302,6 +302,21 @@ to{
     mix-blend-mode: difference;
     opacity: 0;
   }
+
+
+  .bottom{
+    font-size: medium;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+    animation: fade-up 1.2s 1.4s ease forwards;
+  }
+  
+  .bottom p{
+    font-size: small;  
+    overflow: hidden;
+    letter-spacing: 120%;
+    }
   @keyframes slideUpDownAnimation {
     0%, 100% {
       transform: translateY(7px);
@@ -963,7 +978,9 @@ font-size: small;
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
     }
-    
+    .bottom p{
+      font-size: small;  
+      }
   }
 
   @media (hover:none){

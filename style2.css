@@ -160,6 +160,20 @@ transition: opacity 0.3s;
     opacity: 0.8;
 }
 
+.bottom{
+  font-size: medium;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+  animation: fade-up 1.2s 1.4s ease forwards;
+}
+
+.bottom p{
+  font-size: small;
+  
+  
+  }
+
 .hint{
     overflow: hidden;
     z-index: 100;
@@ -993,6 +1007,10 @@ letter-spacing: 120%;
     opacity: 1;
   }
   
+
+    .bottom p{
+    font-size: small;  
+    }
   
 
   
@@ -1129,6 +1147,10 @@ font-size: small;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
       }
+
+      .bottom p{
+        font-size: small;  
+        }
       
 
   }
@@ -1185,6 +1207,10 @@ font-size: small;
     left: 55%;
     top: 63%;
   }
+
+  .bottom p{
+    font-size: small;  
+    }
 }
 
 
