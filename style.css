@@ -307,7 +307,7 @@ to{
   .bottom{
     font-size: medium;
     position: absolute;
-    bottom: 10px;
+    bottom: 2.5vh;
     opacity: 0;
     animation: fade-up 1.2s 1.4s ease forwards;
   }
