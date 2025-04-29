@@ -31,8 +31,8 @@
 
 <div class="line"></div>
 
-    <img src="https://cdn.sanity.io/images/2ydnq366/production/9f61bda68e0a213756f39dc082a7fd265c8f48fc-6434x4158.jpg?w=1600&h=1034&q=100&fit=max&auto=format" alt="" srcset="">
-<div class="bottom"><p> l <span>.</span> - <span>.</span> l l l </p></div>
+    <img src="img-1.jpg" alt="" srcset="">
+<div class="bottom"><p> 1 <span>.</span> - <span>.</span> 3 </p></div>
 </div> 
 
 <div class="next fade-in">
@@ -445,7 +445,7 @@ requestAnimationFrame(raf);
       let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
       let projectTargetX = percentage;
       let projectCurrentX = lerp(0, projectTargetX, 0.12);
-      let imageTargetX = percentage * 0.9; 
+      let imageTargetX = percentage * -0.9; 
       let imageCurrentX = lerp(0, imageTargetX, 0.2);
       projectsSlider.style.transform = `translate3d(${-projectCurrentX}%, 0, 0)`;
     

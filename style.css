@@ -103,8 +103,6 @@ body {
   justify-content: center;
   position: relative;
   transition: filter 0.1s;
-  border: 1px solid #222;
-  border-radius: 60px;
 }
 
 .link1{
@@ -202,7 +200,6 @@ to{
 .next{
     height: 100vh;
     background: var(--bg);
-    border-top: 1px solid #222;
     position: relative;
     display: flex;
     align-items: center;
@@ -211,8 +208,7 @@ to{
     font-weight: 400;
     width: 100vw;
     overflow: hidden;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top: 1px solid #222;
 }
 
 
@@ -451,8 +447,6 @@ to{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #222222b1;
-    border-radius: 35px;
   }
   
   .gist {
@@ -504,7 +498,7 @@ letter-spacing: 120%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    border-radius: 23px;
+
     display: none;
   }
   
@@ -895,7 +889,7 @@ letter-spacing: 120%;
   
   .cursor p{
     text-align: center;
-    font-family: sf pro text;
+
     color: var(--bg);
     font-weight: 400;
     font-size: small;
