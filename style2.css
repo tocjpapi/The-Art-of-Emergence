@@ -1145,10 +1145,6 @@ font-size: small;
         filter: grayscale(20%);
       }
 
-      .next{
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-      }
 
       .bottom p{
         font-size: small;  

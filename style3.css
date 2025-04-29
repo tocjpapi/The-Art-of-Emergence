@@ -105,8 +105,7 @@ justify-content: space-between;
   justify-content: center;
   position: relative;
   transition: filter 0.1s;
-  border: 1px solid #222;
-  border-radius: 60px;
+
 }
 
 .link1{
@@ -1463,10 +1462,7 @@ font-size: small;
   height: 100vh;
   padding-top: 36vh;
 }
-.next{
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
+
 
 .bottom p{
   font-size: small;  
