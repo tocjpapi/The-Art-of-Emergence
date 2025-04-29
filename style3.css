@@ -98,7 +98,7 @@ justify-content: space-between;
   height: 100dvh;
   width: 100vw;
   scale: 0.5;
-  animation:fade-up 1.1s,scale 1.2s  1.2s  ease forwards;
+  animation:fade-up 1.1s,scale 2.1s  1.2s  cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ to{
     height: 100%;
     object-fit: cover;
     scale: 1.4;
-    animation:1.2s scaleup 1.2s ease forwards;
+    animation: 2.1s scaleup 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
     position: absolute;
 }
 
