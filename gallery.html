@@ -31,7 +31,7 @@
         <div class="line"></div>
         
             <img src="img-3.jpg" alt="" srcset="">
-            <div class="bottom"><p> 3 <span>.</span> - <span>.</span> 1 </p></div>
+            <div class="bottom"><p> 3 <span>.</span> - <span>.</span> 3 </p></div>
         </div> 
 
         <div class="next fade-in">
@@ -510,17 +510,17 @@ requestAnimationFrame(raf);
     gsap.registerPlugin(ScrollTrigger);
   
     // Function to add parallax effect
-    function addParallaxEffect(element, strength) {
-      gsap.to(element, {
-        y: -strength * 15,
-        ease: 'power2.inOut',
-        scrollTrigger: {
-          trigger: element,
-
-          scrub: true
-        }
-      });
+function addParallaxEffect(element, strength) {
+  gsap.to(element, {
+    y: -strength * 15,
+    scrollTrigger: {
+      trigger: element,
+      start: "top bottom",  
+      scrub: true
     }
+  });
+}
+
   
     // Function to add hover effect
     function addHoverEffect(element) {
